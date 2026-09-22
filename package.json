@@ -1,0 +1,16 @@
+{
+  "name": "impactworks-cms",
+  "version": "1.0.0",
+  "description": "Standalone Node.js Content Management System for Impactworks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "usr_dev_01",
+    "email": "dev@impactworks.au",
+    "name": "Developer SuperAdmin",
+    "role": "developer",
+    "salt": "b6dc2b2a46e0ce4b6cf25c8072041c1c",
+    "hash": "9aa8fb73be8ef8d91388c5475c6b673a2818070689d2729cafbf126787191c6f237fd76fe426d3d1d72a284dbce5d8fc2bfe6c0eddf2d575824b92bab1b50ad9",
+    "createdAt": "2026-09-19T08:41:56.890Z"
+  },
+  {
+    "id": "usr_adm_02",
+    "email": "admin@impactworks.au",
+    "name": "Impactworks Admin",
+    "role": "admin",
+    "salt": "027cc2333b1c0d4b9307e1b7f79ab929",
+    "hash": "4d7a28e148e6779c2285cb247c42898d4d8ce9a9b68a057701eceef6d9c55ad9cc750428f077c04b4201f38f105e85f2565383907412b62f6311994ff2a66109",
+    "createdAt": "2026-09-19T08:41:56.891Z"
+  },
+  {
+    "id": "usr_edt_03",
+    "email": "editor@impactworks.au",
+    "name": "Content Editor",
+    "role": "editor",
+    "salt": "580999261edc6ee94e8c16cf432622a1",
+    "hash": "61a0bde7bc25b9c61a66acee8ad6215553f984d2bfeaacaec9ff7d047303cd31bf86e48438b095636e09c984d2535dbc537f1f618d3c307425819e2155966015",
+    "createdAt": "2026-09-19T08:41:56.891Z"
+  },
+  {
+    "id": "usr_mng_04",
+    "email": "manager@impactworks.au",
+    "name": "Operations Manager",
+    "role": "manager",
+    "salt": "c862f76e9cc78a5f44044674a8da2a72",
+    "hash": "96c7ba34f62fbca3c2f7dbfdefd28194d9a0662a84f0d674f1177ab5482b907a319f0b66fd053d09e8e8ecb21ed948ff27483b6cb91b5514f473e4c580af8b51",
+    "createdAt": "2026-09-19T08:41:56.891Z"
+  }
+]

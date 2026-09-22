@@ -1,0 +1,461 @@
+{
+  "header": {
+    "logoText": "IMPACTWORKS.",
+    "links": [
+      {
+        "label": "How we work with you",
+        "href": "/who-we-work-with"
+      },
+      {
+        "label": "Benchmarks",
+        "href": "/benchmarks"
+      }
+    ],
+    "cta": {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
+  },
+  "hero": {
+    "eyebrow": "Our mission: Reducing cognitive load for leaders by making complex organisations simpler to run.",
+    "title": "Turning complexity into confident action",
+    "subtitle": "We do work across the systems, processes and infrastructure that complex organisations run on. The cost of a broken system is not just operational. It lands on the people running it.",
+    "subtextLines": [],
+    "ctaPrimary": {
+      "label": "Discover more",
+      "href": "/who-we-are"
+    },
+    "ctaSecondary": {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
+  },
+  "whyWeExist": {
+    "label": "Why we exist",
+    "title": "The way decisions get made in complex organisations has fundamentally shifted over time and most organisations have not caught up. The accountability of decisions still sits with leaders when the operational infrastructure has changed. The fundamental areas of change are:",
+    "context": "",
+    "problemCards": [
+      {
+        "icon": "bi-clipboard2-data",
+        "title": "Data without clarity:",
+        "body": "Leaders are drowning in information but starved of the clarity needed to act on it. More reports. More dashboards. Less confidence in any of it. In most cases the source of truth is diluted."
+      },
+      {
+        "icon": "bi-shield-exclamation",
+        "title": "Tools without trust:",
+        "body": "The technology was sound. The rollout was thorough. However, people still found workarounds because the organisation's decision infrastructure was not ready for what the technology required of it. Use of AI is now exposing these gaps and adding additional business risk."
+      },
+      {
+        "icon": "bi-people",
+        "title": "Decisions without support:",
+        "body": "Accountability has not gone anywhere. The scrutiny is continuous for leaders. The infrastructure to support a good decision - the clarity, the visibility, the defensible record is often missing when it matters most."
+      }
+    ],
+    "closingStatement": "That’s why leaders and team’s alike are carrying the cognitive load for broken business infrastructure. We work in this gap – where visible decisions need to be made, accountability is real and the cost of staying stuck is far too large."
+  },
+  "foundingStory": {
+    "title": "The pattern that built this business",
+    "caption": "",
+    "subtitle": "Recognise this trend?",
+    "body": "Impactworks was not built from theory, but from seeing a repeated pattern more than a decade working inside complex organisations. From early-stage organisations scaling fast to large enterprise managing compounding operational pressure.\n\nUnderneath each one is leaders absorbing complexity that the environment and business infrastructure should be managing.\n\nImpactworks is built to shift this back. To take what is there and build the systems, processes and infrastructure for leaders to lead rather than compensate.",
+    "moments": [
+      {
+        "id": 1,
+        "label": "You took the role",
+        "type": "low",
+        "color": "#F0928B",
+        "description": "Big ambitions. Ready to make a difference."
+      },
+      {
+        "id": 2,
+        "label": "Things were moving",
+        "type": "high",
+        "color": "#50B0AF",
+        "description": "Early wins created momentum and optimism grew."
+      },
+      {
+        "id": 3,
+        "label": "Data without clarity",
+        "type": "low",
+        "color": "#F0928B",
+        "description": "Reports everywhere but real insight was hard to find."
+      },
+      {
+        "id": 4,
+        "label": "People worked around it",
+        "type": "low",
+        "color": "#F0928B",
+        "description": "Smart people solving problems in their own way."
+      },
+      {
+        "id": 5,
+        "label": "A fix finally sticks",
+        "type": "high",
+        "color": "#50B0AF",
+        "description": "Something works; a process holds for a sprint, a report gets trusted and a decision lands. For a moment it looks like the corner has been turned."
+      },
+      {
+        "id": 6,
+        "label": "But it doesn't hold",
+        "type": "low",
+        "color": "#F0928B",
+        "description": "The fix depended on a person pushing it and carrying the load. The moment this person stops, good works falls through the gaps."
+      },
+      {
+        "id": 7,
+        "label": "Someone great burned out",
+        "type": "low",
+        "color": "#F0928B",
+        "description": "The cost showed up in people, not just performance."
+      },
+      {
+        "id": 8,
+        "label": "The strategy was right",
+        "type": "resolve",
+        "color": "#F6CA6A",
+        "description": "The model worked. Execution and systems didn't. We knew there had to be a better way."
+      }
+    ],
+    "ctaPrimary": {
+      "label": "How to solve",
+      "href": "/what-we-do"
+    },
+    "ctaSecondary": {
+      "label": "How it shows up",
+      "href": "/benchmarks"
+    }
+  },
+  "whoWeWorkWith": {
+    "label": "How we work with you",
+    "title": "Who we work with and our approach",
+    "openingLine": "The leaders who get the most from Impactworks are not defined by their title or sector, they are the ones who have accountability sitting on their shoulders to deliver, but where the operational environment has stopped keeping up with them. Here is where you might recognise yourself and where we’d start.",
+    "personas": [
+      {
+        "id": "1",
+        "role": "CEO / MD",
+        "title": "The Accountable Executive",
+        "description": "You have quietly lost confidence in the information you are making decisions with. The reports exist. The dashboards exist. You hesitate before answering how the business is really performing. You do not need another transformation programme. You need clarity.",
+        "tags": [
+          "Optimising data for decisions",
+          "Commercial business case support"
+        ]
+      },
+      {
+        "id": "2",
+        "role": "COO / GM",
+        "title": "The Operations Leader",
+        "description": "You are managing complexity that accumulates faster than it resolves. Something that should be simple takes weeks. You are the person holding it together and you know that is not sustainable. You need infrastructure that works without you in the middle of it.",
+        "tags": [
+          "Business unit integrations",
+          "Integrating operating systems",
+          "Practical system design thinking"
+        ]
+      },
+      {
+        "id": "3",
+        "role": "CTO / CDO",
+        "title": "The Tech Sponsor",
+        "description": "You did everything right. You deployed the systems. You ran the training. You are still watching people work around them. The technology was not the problem. The decision infrastructure around it was. You need the real problem fixed.",
+        "tags": [
+          "Technology review and decision-making",
+          "Optimising data for decisions",
+          "Data and governance foundations"
+        ]
+      },
+      {
+        "id": "4",
+        "role": "CRO / Head of Risk",
+        "title": "The Governance Owner",
+        "description": "Your risk registers are not reflecting reality. Signals are being missed. By the time something surfaces it has already cost more than it should have. You need visibility earlier: not better reporting after the fact.",
+        "tags": [
+          "Project and adoption risk reviews",
+          "Governance delivery and rollout"
+        ]
+      },
+      {
+        "id": "5",
+        "role": "Programme Director",
+        "title": "The Delivery Lead",
+        "description": "You are holding multi-workstream complexity together largely alone. When you are not across it, things fall through. You need a delivery system that does not depend on one person because right now, that person is you.",
+        "tags": [
+          "Project and adoption risk reviews",
+          "Governance delivery and rollout",
+          "Practical system design thinking"
+        ]
+      },
+      {
+        "id": "6",
+        "role": "Head of Transformation",
+        "title": "The Transformation Lead",
+        "description": "The programme looked complete. Adoption quietly failed anyway. You ran the workshops. You tracked the milestones. The change did not stick. You need transformation that is embedded, not a training campaign dressed as one.",
+        "tags": [
+          "Adoption and change support",
+          "Project and adoption risk reviews",
+          "Governance delivery and rollout",
+          "Technology review and decision making",
+          "Optimising data for decisions"
+        ]
+      }
+    ],
+    "proofStrip": {
+      "sectorsLabel": "Sectors",
+      "sectors": [
+        "Mining and Energy",
+        "Financial Services",
+        "Government and Public Sector",
+        "Technology",
+        "Healthcare"
+      ],
+      "stats": []
+    }
+  },
+  "whatWeDo": {
+    "label": "Our solutions",
+    "title": "Our solutions",
+    "openingLine1": "",
+    "openingLine2": "Our work sits across the systems, processes and infrastructure that complex organisations run on whilst keeping people at the core.\n\nSome of it just needs to be built from scratch. Some of it needs to work better. Both, to ensure that people don’t have to compensate for broken operational infrastructure.",
+    "paragraphs": [
+      "Our work sits across the systems, processes and infrastructure that complex organisations run on whilst keeping people at the core.",
+      "Some of it just needs to be built from scratch. Some of it needs to work better. Both, to ensure that people don’t have to compensate for broken operational infrastructure."
+    ],
+    "introClosing": "Our work sits across four areas. Most impactful when used together.",
+    "services": [
+      {
+        "num": "01",
+        "name": "Information Clarity",
+        "mission": "Making information easy to find, trust and use.",
+        "body": "When the data exists but nobody trusts it, the problem is not the data. It is the infrastructure around it. Leaders should be able to walk into a room and answer the question. Not hedge or caveat. We build the foundations that make that possible by connecting systems, cleaning up governance, and turning what already exists into something people can actually rely on and trust.",
+        "tags": [
+          "Data and governance foundations: We put ownership, definitions, and standards around the data that already exists, so people stop arguing about whose number is right.",
+          "Integrating operating systems: We connect the systems that hold the information, so the answer to a question doesn't depend on which platform someone happens to be looking at or how long it takes to get the data.",
+          "Optimising data for decisions: We shape what's already there into something a leader can act on in the room, not something that needs a follow-up meeting to interpret."
+        ]
+      },
+      {
+        "num": "02",
+        "name": "Risk Visibility",
+        "mission": "Seeing problems early, before they escalate.",
+        "body": "Risk that surfaces late costs more than the risk itself. By the time it lands on a leader's desk it has already compounded in time, in cost, in the confidence of the people managing it. We build the visibility that lets organisations see what is coming, not just what has already happened. So, leaders can act early rather than respond late.",
+        "tags": [
+          "Project and adoption risk reviews: We surface where a project is quietly losing momentum or buy-in, before it shows up as a missed deadline or a system nobody uses.",
+          "Governance delivery and rollout: We make sure governance doesn't just exist on paper, it gets delivered and adopted the way it was designed to run and the team understands it."
+        ]
+      },
+      {
+        "num": "03",
+        "name": "Decision Support",
+        "mission": "A decision is only as good as the information behind it and the system that supports it. Most leaders we work with have one but not both.",
+        "body": "The standard we work to is not whether a decision was made, it is whether the leader who made it can explain it, defend it, and stand behind it. That is what we build toward:",
+        "tags": [
+          "Technology review and decision-making: We cut through vendor noise to get leaders to a technology decision they can justify on the numbers, not just the demo.",
+          "Commercial business case support: We build the case behind the case, the assumptions, trade-offs, and numbers that hold up when a board or investor pushes back.",
+          "Business unit integrations: We connect the systems and workflows that decisions actually run on, so the call made at the top survives contact with how the organisation really operates."
+        ]
+      },
+      {
+        "num": "04",
+        "name": "Practical system design thinking",
+        "mission": "Business infrastructure that works in real life, under pressure.",
+        "body": "The best operating system is the one people actually use, not the one that looked right in the design session. It’s the one that holds up on a bad day, in the real environment, with the real team. We design for that version, not the ideal one, and build it so you can hand it over and trust that it will work without you holding it together, ensuring that people, process and systems are considered collectively.",
+        "tags": [
+          "Reducing siloed systems through integration: We connect the systems that were built separately, so the real team isn't stuck manually bridging the gaps between them on a bad day. We create the processes that support this change.",
+          "Adoption support for embedded change: We stay close through the handover, so the system doesn't quietly fall back to the old way of working the moment we step back."
+        ]
+      }
+    ],
+    "bottomCta": {
+      "headline": "Curious about what this means for you?",
+      "ctaPrimary": {
+        "label": "Get in touch",
+        "href": "/contact"
+      },
+      "ctaSecondary": {
+        "label": "See how we work with you",
+        "href": "/who-we-work-with"
+      }
+    }
+  },
+  "howWeWork": {
+    "label": "Our approach",
+    "title": "Our approach",
+    "context": "Our approach isn’t one-size fits all, we meet you somewhere along the process where the problem actually is. Here are the five key steps of the methodology:",
+    "steps": [
+      {
+        "num": "01",
+        "name": "Diagnose",
+        "desc": "Understand the real problem, not the presenting symptom. We do not design until we know what we are solving."
+      },
+      {
+        "num": "02",
+        "name": "Connect",
+        "desc": "Build the shared source of truth. Fragmented systems brought together and the people using them brought along with it."
+      },
+      {
+        "num": "03",
+        "name": "Clarify",
+        "desc": "Turn connected information into clear priorities, risks and actions. Remove the noise. Amplify the signals you need."
+      },
+      {
+        "num": "04",
+        "name": "Design",
+        "desc": "Design practical systems that work under real conditions, for the people who must use them under pressure, in the real environment, on a bad day. This is across process infrastructure and technology."
+      },
+      {
+        "num": "05",
+        "name": "Embed",
+        "desc": "Make adoption happen. Not through training campaigns. By building systems people want to use because they actually help, and because the people who use them were part of building them."
+      }
+    ],
+    "bottomCta": {
+      "text": "As a starting point: check out our benchmarks to evaluate how your organisation is fairing.",
+      "link": {
+        "label": "Check out our benchmarks",
+        "href": "/benchmarks"
+      }
+    }
+  },
+  "sixSignals": {
+    "label": "Benchmarks",
+    "title": "Six benchmarks that signal operational investigation",
+    "subtext": "These are not symptoms of bad leadership. They are the most common places broken business infrastructure shows up first, before it becomes a crisis you can no longer ignore.",
+    "opening1": "Capability without the right environment produces the same result every time. If three or more of these sound familiar, it is not a coincidence. It is what the infrastructure underneath your business is telling you.",
+    "opening2": "",
+    "centerCardTitle": "Benchmarks, not verdicts",
+    "signals": [
+      {
+        "stat": "40%",
+        "title": "Leadership Visibility Breakdown",
+        "label": "of executives say they always trust the data they use to make decisions",
+        "source": "2025 Data Centre and Network news",
+        "body": "You are making decisions on information you are not fully confident in. The reports exist. The dashboards exist. But when someone asks how the business is really performing: you hesitate before you answer."
+      },
+      {
+        "stat": "56%",
+        "title": "Delivery Coordination Failing",
+        "label": "of every dollar at risk on a project is lost due to poor project handoffs between teams",
+        "source": "2013 PMI, Pulse of the Profession",
+        "body": "The work is getting done. But when it moves from one team to the next, things fall through. Nobody is to blame and nothing gets fixed. The gap between teams has become the place where accountability disappears."
+      },
+      {
+        "stat": "74%",
+        "title": "Decision-Making Bottlenecks",
+        "label": "say their organisation loses 5% of annual revenue to slow decision making",
+        "source": "$250M+ companies, 2025, West Monroe",
+        "body": "You are being asked to make calls that should not need your attention. And you make them because if you do not, nothing moves. The cost is not just your time. It is the signal it sends to everyone below you that the system does not work without you."
+      },
+      {
+        "stat": "106",
+        "title": "Tool and Workflow Fragmentation",
+        "label": "average number of SaaS applications for companies for 200-700 employees",
+        "source": "2025, BetterCloud State of Saas Ops Report",
+        "body": "You did everything right. You invested in the technology. You ran the rollout. And somewhere along the way people found workarounds and the workarounds became the actual system. The tools are still there. So is the problem they were supposed to solve."
+      },
+      {
+        "stat": "62%",
+        "title": "Middle Management Overload",
+        "label": "of managers coordinate more than they lead or perform core work",
+        "source": "2023, Asana, Anatomy of Work",
+        "body": "Your best people are spending their days chasing updates, translating between teams, holding things together that should not depend on them. They are not leading. They are compensating for a system that is not working."
+      },
+      {
+        "stat": "78%",
+        "title": "Scaling Reveals Process Gaps",
+        "label": "of companies that achieve product-market fit, fail to scale effectively",
+        "source": "2025, McKinsey & Company",
+        "body": "Growth exposed something. The systems that worked at one size do not work at the next. It was not visible until the pressure increased and now the cracks are showing in places you did not expect."
+      }
+    ],
+    "closingCard": {
+      "line1": "If these sound familiar, it is not because your organisation is broken. It is because the environment around your leaders has not kept up with the demands placed on it.",
+      "line2": "That is fixable. And that is where we start.",
+      "cta": {
+        "label": "Get in touch",
+        "href": "/contact"
+      }
+    }
+  },
+  "whatHappensNext": {
+    "title": "Here is what happens when you reach out",
+    "steps": [
+      {
+        "num": "01",
+        "heading": "A conversation, not a pitch",
+        "body": "We start with a call to understand what is happening in your organisation. No agenda, no deck. Just a genuine conversation about whether we are the right fit."
+      },
+      {
+        "num": "02",
+        "heading": "We tell you honestly if we can help",
+        "body": "If we can, we will explain what that looks like and what we would need from you. If we cannot, we will tell you that too and point you in a better direction if we can."
+      },
+      {
+        "num": "03",
+        "heading": "If it makes sense, we start small",
+        "body": "Every engagement begins with a focused diagnostic. You get a clear picture of where the problems are and what they are costing, with or without us going further."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Get in touch",
+    "title": "If something in here sounded familiar: it is worth a conversation.",
+    "subCopy1": "No pitch deck on the first call. No proposal until we have earned it.",
+    "subCopy2": "Just a conversation about what is happening in your organisation, whether you are carrying something that should not depend on you, or watching a system fail that you have already invested in and whether we are the right people to help.",
+    "subCopy3": "If we are not, we will tell you.",
+    "trustNote": "We respond within one business day. No automated sequences. A real person reads every message.",
+    "fields": {
+      "firstName": {
+        "label": "First name",
+        "required": true
+      },
+      "lastName": {
+        "label": "Last name",
+        "required": true
+      },
+      "organisation": {
+        "label": "Organisation",
+        "required": true
+      },
+      "workEmail": {
+        "label": "Work email",
+        "required": true
+      },
+      "problem": {
+        "label": "What is the one operational problem you would fix if you could?",
+        "note": "(optional: but useful)",
+        "placeholder": "Keep it informal. We are trying to understand what is actually going on: not receive a brief."
+      }
+    },
+    "submitBtn": "Send message",
+    "belowBtn": "",
+    "confirmation": {
+      "heading": "Message received.",
+      "body": "Thank you for reaching out, we will respond within one business day."
+    }
+  },
+  "footer": {
+    "beliefStatement": "Simple Systems. Human Judgement. Confident Decisions.",
+    "copyright": "2025 Impactworks",
+    "url": "https://impactworks.au",
+    "legalLinks": [
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookie-policy"
+      },
+      {
+        "label": "Intellectual Property Notice",
+        "href": "/intellectual-property"
+      },
+      {
+        "label": "Disclaimer",
+        "href": "/disclaimer"
+      }
+    ]
+  }
+}

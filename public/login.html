@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login &middot; Impactworks CMS Panel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --color-navy: #1B1F34;
+      --color-dark: #0F1222;
+      --color-teal: #50B0AF;
+      --color-aqua: #87DDDB;
+      --color-coral: #F0928B;
+      --color-gold: #F6CA6A;
+      --color-slate: #F8FAFC;
+    }
+    body {
+      background: radial-gradient(circle at 10% 20%, rgba(80, 176, 175, 0.12) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, rgba(240, 146, 139, 0.08) 0%, transparent 40%),
+                  linear-gradient(135deg, #0A0D1A 0%, #15192E 50%, #1B1F34 100%);
+      color: #E2E8F0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 20px;
+    }
+    .login-card {
+      background: rgba(27, 31, 52, 0.85);
+      border: 1px solid rgba(80, 176, 175, 0.25);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 16px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(80, 176, 175, 0.1);
+      width: 100%;
+      max-width: 460px;
+      padding: 40px 35px;
+    }
+    .brand-logo {
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      font-size: 1.4rem;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, var(--color-teal), var(--color-aqua));
+      color: var(--color-dark);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .form-control {
+      background-color: rgba(15, 18, 34, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #FFFFFF;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: all 0.25s ease;
+    }
+    .form-control:focus {
+      background-color: rgba(15, 18, 34, 0.95);
+      border-color: var(--color-teal);
+      box-shadow: 0 0 0 3px rgba(80, 176, 175, 0.25);
+      color: #FFFFFF;
+    }
+    .form-control::placeholder {
+      color: #64748B;
+    }
+    .btn-submit {
+      background: linear-gradient(135deg, var(--color-teal) 0%, #3B8F8E 100%);
+      border: none;
+      color: #0A0D1A;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 15px rgba(80, 176, 175, 0.3);
+    }
+    .btn-submit:hover {
+      background: linear-gradient(135deg, #62C1C0 0%, var(--color-teal) 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(80, 176, 175, 0.4);
+      color: #0A0D1A;
+    }
+    .quick-login-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #CBD5E1;
+      font-size: 0.78rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .quick-login-btn:hover {
+      background: rgba(80, 176, 175, 0.15);
+      border-color: var(--color-teal);
+      color: #FFFFFF;
+    }
+    .quick-login-btn.dev-btn {
+      border-color: rgba(246, 202, 106, 0.4);
+      color: var(--color-gold);
+    }
+    .quick-login-btn.dev-btn:hover {
+      background: rgba(246, 202, 106, 0.15);
+      color: #FFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <div class="text-center mb-4">
+      <div class="brand-logo">
+        IMPACTWORKS<span class="brand-badge">CMS</span>
+      </div>
+      <p class="text-muted small mb-0">Production Content & System Management Panel</p>
+    </div>
+
+    <div id="alertBox" class="alert alert-danger d-none py-2 small" role="alert"></div>
+
+    <form id="loginForm">
+      <div class="mb-3">
+        <label for="emailInput" class="form-label small text-muted">Email Address</label>
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-secondary text-muted">
+            <i class="bi bi-envelope"></i>
+          </span>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@impactworks.au" required autofocus>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="passwordInput" class="form-label small text-muted">Password</label>
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-secondary text-muted">
+            <i class="bi bi-lock"></i>
+          </span>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password" required>
+          <button class="btn btn-outline-secondary border-secondary text-muted" type="button" id="togglePassword">
+            <i class="bi bi-eye" id="toggleIcon"></i>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-submit w-100 mb-4" id="submitBtn">
+        <span id="btnText">Sign In to Dashboard</span>
+        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+      </button>
+    </form>
+
+    <div class="pt-3 border-top border-secondary border-opacity-25">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="small text-muted fw-bold">Demo Accounts:</span>
+        <span class="badge bg-dark text-muted small">Click to autofill</span>
+      </div>
+      <div class="d-flex flex-wrap gap-2">
+        <button class="quick-login-btn dev-btn" onclick="fillCreds('dev@impactworks.au', 'dev@impactworks2025')">
+          <i class="bi bi-code-slash me-1"></i> Developer SuperAdmin
+        </button>
+        <button class="quick-login-btn" onclick="fillCreds('admin@impactworks.au', 'admin@impactworks2025')">
+          <i class="bi bi-shield-check me-1"></i> Super Admin
+        </button>
+        <button class="quick-login-btn" onclick="fillCreds('editor@impactworks.au', 'editor@impactworks2025')">
+          <i class="bi bi-pencil-square me-1"></i> Content Editor
+        </button>
+        <button class="quick-login-btn" onclick="fillCreds('manager@impactworks.au', 'manager@impactworks2025')">
+          <i class="bi bi-briefcase me-1"></i> Operations Manager
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function fillCreds(email, pwd) {
+      document.getElementById('emailInput').value = email;
+      document.getElementById('passwordInput').value = pwd;
+    }
+
+    const toggleBtn = document.getElementById('togglePassword');
+    const pwdInput = document.getElementById('passwordInput');
+    const toggleIcon = document.getElementById('toggleIcon');
+    toggleBtn.addEventListener('click', () => {
+      const isPwd = pwdInput.type === 'password';
+      pwdInput.type = isPwd ? 'text' : 'password';
+      toggleIcon.className = isPwd ? 'bi bi-eye-slash' : 'bi bi-eye';
+    });
+
+    // Check if already authenticated
+    fetch('/api/auth/me')
+      .then(res => res.json())
+      .then(data => {
+        if (data.authenticated) {
+          window.location.href = '/';
+        }
+      })
+      .catch(() => {});
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value.trim();
+      const password = document.getElementById('passwordInput').value;
+      const alertBox = document.getElementById('alertBox');
+      const submitBtn = document.getElementById('submitBtn');
+      const btnText = document.getElementById('btnText');
+      const btnSpinner = document.getElementById('btnSpinner');
+
+      alertBox.classList.add('d-none');
+      submitBtn.disabled = true;
+      btnText.textContent = 'Authenticating...';
+      btnSpinner.classList.remove('d-none');
+
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          throw new Error(data.error || 'Login failed');
+        }
+        window.location.href = '/';
+      } catch (err) {
+        alertBox.textContent = err.message;
+        alertBox.classList.remove('d-none');
+        submitBtn.disabled = false;
+        btnText.textContent = 'Sign In to Dashboard';
+        btnSpinner.classList.add('d-none');
+      }
+    });
+  </script>
+</body>
+</html>

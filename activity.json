@@ -1,0 +1,83 @@
+[
+  {
+    "id": "act_1790079415081_136jm",
+    "timestamp": "2026-09-22T12:16:55.081Z",
+    "user": "manager@impactworks.au",
+    "action": "LOGIN_SUCCESS",
+    "details": {
+      "role": "manager",
+      "name": "Operations Manager"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1790079412174_sjlyg",
+    "timestamp": "2026-09-22T12:16:52.174Z",
+    "user": "admin@impactworks.au",
+    "action": "LOGOUT",
+    "details": {},
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1790079390877_gnqqd",
+    "timestamp": "2026-09-22T12:16:30.877Z",
+    "user": "admin@impactworks.au",
+    "action": "CREATE_BACKUP",
+    "details": {
+      "filename": "data_manual_2026-09-22_12-16-30-874.json",
+      "label": "manual"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1790079348770_j3h2c",
+    "timestamp": "2026-09-22T12:15:48.770Z",
+    "user": "admin@impactworks.au",
+    "action": "LOGIN_SUCCESS",
+    "details": {
+      "role": "admin",
+      "name": "Impactworks Admin"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1790079343861_esx7h",
+    "timestamp": "2026-09-22T12:15:43.861Z",
+    "user": "dev@impactworks.au",
+    "action": "LOGOUT",
+    "details": {},
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1789807924555_yozbw",
+    "timestamp": "2026-09-19T08:52:04.555Z",
+    "user": "dev@impactworks.au",
+    "action": "LOGIN_SUCCESS",
+    "details": {
+      "role": "developer",
+      "name": "Developer SuperAdmin"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1789807356173_ix5yp",
+    "timestamp": "2026-09-19T08:42:36.173Z",
+    "user": "dev@impactworks.au",
+    "action": "LOGIN_SUCCESS",
+    "details": {
+      "role": "developer",
+      "name": "Developer SuperAdmin"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "act_1789807317163_nbfe8",
+    "timestamp": "2026-09-19T08:41:57.163Z",
+    "user": "system",
+    "action": "INITIALIZE_USERS",
+    "details": {
+      "message": "Default CMS user accounts initialized"
+    },
+    "ip": "system"
+  }
+]
