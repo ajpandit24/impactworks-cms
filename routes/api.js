@@ -112,22 +112,49 @@ router.post("/auth/logout", (req, res) => {
 });
 
 // -------------------------------------------------------------
-// CONTENT CRUD ROUTES
+// PUBLIC CONTENT API (Consumed by Next.js Frontend)
 // -------------------------------------------------------------
 
-// GET /api/content
-router.get("/content", requireAuth, (req, res) => {
+// Helper function to read and send data.json
+function sendContentJson(req, res) {
   try {
     if (!fs.existsSync(ROOT_DATA_FILE)) {
       return res.status(404).json({ error: "data.json not found on server." });
     }
     const rawData = fs.readFileSync(ROOT_DATA_FILE, "utf-8");
     const json = JSON.parse(rawData);
+
+    // Set CORS and Cache-Control headers for high-performance frontend delivery
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+    res.setHeader(
+      "Cache-Control",
+      "public, s-maxage=10, stale-while-revalidate=59"
+    );
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.json(json);
   } catch (err) {
     res.status(500).json({ error: "Failed to read data.json: " + err.message });
   }
+}
+
+// GET /api/health (Health check)
+router.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+    service: "Impactworks CMS API",
+  });
 });
+
+// GET /api/public/content (Public endpoint for Next.js)
+router.get("/public/content", sendContentJson);
+
+// GET /api/v1/content (Versioned alias)
+router.get("/v1/content", sendContentJson);
+
+// GET /api/content (Also serves content for dashboard and frontend)
+router.get("/content", sendContentJson);
 
 // POST /api/content (Save content & auto-create backup)
 router.post("/content", requireAuth, (req, res) => {
